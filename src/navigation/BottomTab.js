@@ -27,9 +27,9 @@ export default function BottomTab({ logueado, setLogueado }) {
         component={RenderHomeScreen}
         options={{
           title: 'Inicio',
-          tabBarActiveTintColor: '#FFC300', // Color activo de la pestaña
+          tabBarActiveTintColor: '#FFC500', 
           headerStyle: {
-            backgroundColor: '#FFC300', // Color del header
+            backgroundColor: '#FFC500',
           },
           headerTintColor: '#fff', // Color del texto en el header
           tabBarIcon: ({ color }) => ( // Función que define el ícono de la pestaña
@@ -42,9 +42,9 @@ export default function BottomTab({ logueado, setLogueado }) {
         component={RenderAdmin}
         options={{
           title: 'Admin Screen',
-          tabBarActiveTintColor: '#FFC300', // Color activo de la pestaña
+          tabBarActiveTintColor: '#FFC800', // Color activo de la pestaña
           headerStyle: {
-            backgroundColor: '#FFC300', // Color del header
+            backgroundColor: '#FFC800', // Color del header
           },
           headerTintColor: '#fff', // Color del texto en el header
           tabBarIcon: ({ color }) => ( // Función que define el ícono de la pestaña

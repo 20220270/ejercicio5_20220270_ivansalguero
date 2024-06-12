@@ -4,10 +4,10 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 import Modal from 'react-native-modal';
 
 const UserModal = ({ isVisible,
-    onClose, onSubmit, 
-    nombre, setNombre, 
+    onClose, onSubmit,
+    nombre, setNombre,
     apellido, setApellido,
-    correo, setCorreo, 
+    correo, setCorreo,
     alias, setAlias,
     clave, setClave,
     confirmarClave, setConfirmarClave,
@@ -23,12 +23,23 @@ const UserModal = ({ isVisible,
                     value={nombre}
                     onChangeText={text => setNombre(text)}
                 />
+
                 <TextInput
                     style={styles.input}
                     placeholder="Apellido"
                     value={apellido}
                     onChangeText={text => setApellido(text)}
                 />
+
+
+
+                <TextInput
+                    style={styles.input}
+                    placeholder="Alias"
+                    value={alias}
+                    onChangeText={text => setAlias(text)}
+                />
+
                 <TextInput
                     style={styles.input}
                     placeholder="Correo"
@@ -37,12 +48,7 @@ const UserModal = ({ isVisible,
                 />
                 {modalType === 'create' && (
                     <>
-                        <TextInput
-                            style={styles.input}
-                            placeholder="Alias"
-                            value={alias}
-                            onChangeText={text => setAlias(text)}
-                        />
+                        
                         <TextInput
                             style={styles.input}
                             placeholder="Contraseña"

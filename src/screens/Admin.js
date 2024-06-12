@@ -1,4 +1,4 @@
-// screens/Carrito.js
+
 import React, { useEffect, useState } from 'react';
 import { Text, TouchableOpacity, View, StyleSheet, Alert } from 'react-native';
 import Constants from 'expo-constants';
@@ -147,7 +147,7 @@ const Admin = ({ logueado, setLogueado  }) => {
     setNombre(user.nombre_administrador);
     setApellido(user.apellido_administrador);
     setCorreo(user.correo_administrador);
-    setAlias('');
+    setAlias(user.alias_administrador);
     setClave('');
     setConfirmar('');
     setId(user.id_administrador);
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
   },
   addButton: {
-    backgroundColor: '#AF8260',
+    backgroundColor: '#AF1160',
     borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 20,

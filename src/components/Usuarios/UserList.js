@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     button: {
-        backgroundColor: '#AF8260',
+        backgroundColor: '#AF1160',
         borderRadius: 5,
         paddingVertical: 10,
         paddingHorizontal: 20,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         marginVertical: 5,
     },
     buttonDelete: {
-        backgroundColor: '#C63E3E',
+        backgroundColor: '#C6193E',
     },
     buttonText: {
         color: '#ffffff',
